@@ -11,8 +11,8 @@ This React application allows users to convert text into speech. It utilizes the
 ## Getting Started
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/text-speech-converter.git
-   ```
+   git clone https://github.com/ram05kishor12/Text-Voice
+   ``
 
 2. Navigate to the project directory.
    ```bash
