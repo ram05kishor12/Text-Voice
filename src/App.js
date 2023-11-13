@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [selectedVoice, setSelectedVoice] = useState(null);
 
-  const handleConvert = () => {
+  const handlePlay = () => {
     const text = document.getElementById('text').value;
     if (!text) {
       alert('Please enter text to convert.');
@@ -60,8 +60,8 @@ function App() {
               </option>
             ))}
           </select>
-          <button id="convertButton" onClick={handleConvert}>
-            Convert
+          <button id="convertButton" onClick={handlePlay}>
+            Play
           </button>
           <button id="downloadButton" onClick={handleDownload}>
             Download
