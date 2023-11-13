@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [selectedVoice, setSelectedVoice] = useState(null);
 
-  const handlePlay = () => {
+  const handleConvert = () => {
     const text = document.getElementById('text').value;
     if (!text) {
       alert('Please enter text to convert.');
@@ -27,11 +27,11 @@ function App() {
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.voice = selectedVoice;
 
-    const blob = new Blob([new Uint8Array([])], { type: 'audio/mp3' });
+    const blob = new Blob([new Uint8Array([])], { type: 'audio/wav' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'speech.mp3';
+    a.download = 'speech.wav';
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -60,7 +60,7 @@ function App() {
               </option>
             ))}
           </select>
-          <button id="convertButton" onClick={handlePlay}>
+          <button id="convertButton" onClick={handleConvert}>
             Play
           </button>
           <button id="downloadButton" onClick={handleDownload}>
