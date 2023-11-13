@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, #a1c4fd 10%, #c2e9fb 100%); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name{
+    
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: -65px;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box textarea{
+  height: 300px;
+  font-size: 15px;
+  resize: none;
+  padding: 20px;
+  border : 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  background: rgba(248, 239, 239, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  border: 1px solid rgba(248, 239, 239, 0.40);
+  width: fit-content;
+}
+
+
+.row{
+   
+  width : 600px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 45px;
+  margin-bottom: 15px;
+
+}
+
+.row button{
+
+  background-color: black;
+  font-size: 1rem;
   color: white;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  height: 50px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+textarea placeholder{
+    color :black;
+    font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+select {
+
+  flex : 1;
+  color : grey;
+  background: rgba(248, 239, 239, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  border: 1px solid rgba(248, 239, 239, 0.40);
+  width: fit-content;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 35px;
+  border : none;
+
+}
+
+.box textarea {
+  width: 600px;
 }
