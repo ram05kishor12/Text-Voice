@@ -61,7 +61,7 @@ function App() {
             ))}
           </select>
           <button id="convertButton" onClick={handleConvert}>
-            Play
+            Convert
           </button>
           <button id="downloadButton" onClick={handleDownload}>
             Download
